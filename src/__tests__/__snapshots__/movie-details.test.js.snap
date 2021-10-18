@@ -84,9 +84,13 @@ exports[`Movie details component should match snapshot 1`] = `
         fill="currentColor"
       />
     </svg>
-    (
-    2
-    )
+    <span
+      data-testid="no_ratings"
+    >
+      (
+      2
+      )
+    </span>
     <div
       class="rate-container"
     >
