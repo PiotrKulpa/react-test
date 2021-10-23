@@ -59,7 +59,7 @@ function App() {
     deleteToken(['mr-token']);
   }
 
-  if(loading) return <h1>Loading...</h1>
+  if(loading) return <h1 data-testid="loading">Loading...</h1>
   if(error) return <h1>Error loading movies</h1>
 
   return (
@@ -72,7 +72,7 @@ function App() {
        <FontAwesomeIcon icon={faSignOutAlt} onClick={logoutUser}/>
       </header>
       <div className="layout">
-          <div>
+          <div data-testid="list">
             <MovieList
               movies={movies}
               movieClicked={loadMovie}
